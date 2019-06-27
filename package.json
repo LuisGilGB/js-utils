@@ -1,0 +1,23 @@
+{
+  "name": "@luisgilgb/js-utils",
+  "version": "0.1.0",
+  "description": "A collection of native JavaScript utils such as functions and constants.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisGilGB/js-utils.git"
+  },
+  "keywords": [
+    "javascript",
+    "utils"
+  ],
+  "author": "Luis Gil Gutiérrez de la Barreda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisGilGB/js-utils/issues"
+  },
+  "homepage": "https://github.com/LuisGilGB/js-utils#readme"
+}
