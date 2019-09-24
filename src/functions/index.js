@@ -1,5 +1,7 @@
-import identityFn from './identityFn';
+import identityFunction from './identityFunction';
+import defaultMapper from './defaultMapper';
 
 export default {
-	identityFn
+	identityFunction,
+    defaultMapper
 }
