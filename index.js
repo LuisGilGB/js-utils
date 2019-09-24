@@ -1,5 +1,5 @@
 const src = require('./src');
 
-module.exports {
+module.exports = {
 	...src
 }
