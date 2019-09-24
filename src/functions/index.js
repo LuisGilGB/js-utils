@@ -1,7 +1,7 @@
-import identityFunction from './identityFunction';
-import defaultMapper from './defaultMapper';
+const identityFunction = require('./identityFunction');
+const defaultMapper = require('./defaultMapper');
 
-export default {
+module.exports = {
 	identityFunction,
     defaultMapper
 }

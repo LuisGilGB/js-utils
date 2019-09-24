@@ -1,5 +1,5 @@
-import src from './src';
+const src = require('./src');
 
-export default {
+module.exports {
 	...src
 }

@@ -1,5 +1,5 @@
-import functions from './functions';
+const functions = require('./functions');
 
-export default {
+module.exports = {
 	...functions
 }
