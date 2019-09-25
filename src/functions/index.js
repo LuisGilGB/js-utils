@@ -4,6 +4,7 @@ const exists = require('./exists');
 const objectify = require('./objectify');
 const isNull = require('./isNull');
 const isString = require('./isString');
+const isNumber = require('./isNumber');
 const isArray = require('./isArray');
 const isFunction = require('./isFunction');
 const isTruthy = require('./isTruthy');
@@ -17,6 +18,7 @@ module.exports = {
     objectify,
     isNull,
     isString,
+    isNumber,
     isArray,
     isFunction,
     isTruthy,
