@@ -6,6 +6,7 @@ const isArray = require('./isArray');
 const isString = require('./isString');
 const isTruthy = require('./isTruthy');
 const isNullOrUndefined = require('./isNullOrUndefined');
+const isEmptyArray = require('./isEmptyArray');
 
 module.exports = {
 	identityFunction,
@@ -16,4 +17,5 @@ module.exports = {
     isString,
     isTruthy,
     isNullOrUndefined,
+    isEmptyArray,
 }
