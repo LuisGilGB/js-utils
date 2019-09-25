@@ -6,6 +6,7 @@ const isNull = require('./isNull');
 const isString = require('./isString');
 const isNumber = require('./isNumber');
 const isArray = require('./isArray');
+const isObject = require('./isObject');
 const isFunction = require('./isFunction');
 const isTruthy = require('./isTruthy');
 const isNullOrUndefined = require('./isNullOrUndefined');
@@ -20,6 +21,7 @@ module.exports = {
     isString,
     isNumber,
     isArray,
+    isObject,
     isFunction,
     isTruthy,
     isNullOrUndefined,
