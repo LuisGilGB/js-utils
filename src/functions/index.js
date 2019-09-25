@@ -4,6 +4,7 @@ const exists = require('./exists');
 const objectify = require('./objectify');
 const isString = require('./isString');
 const isTruthy = require('./isTruthy');
+const isNullOrUndefined = require('./isNullOrUndefined');
 
 module.exports = {
 	identityFunction,
@@ -12,4 +13,5 @@ module.exports = {
     objectify,
     isString,
     isTruthy,
+    isNullOrUndefined,
 }
