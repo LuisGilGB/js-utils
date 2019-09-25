@@ -3,6 +3,7 @@ const defaultMapper = require('./defaultMapper');
 const exists = require('./exists');
 const objectify = require('./objectify');
 const isString = require('./isString');
+const isTruthy = require('./isTruthy');
 
 module.exports = {
 	identityFunction,
@@ -10,4 +11,5 @@ module.exports = {
     exists,
     objectify,
     isString,
+    isTruthy,
 }
