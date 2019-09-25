@@ -7,6 +7,6 @@
  */
 const exists = require('./exists');
 
-const objectify = (input, valueKey = 'value') => exists(input) ? typeof input === 'object' ? input : {[valueKey]: input} : {}
+const objectify = (input, valueKey = 'value') => exists(input) ? typeof input === 'object' ? input : {[valueKey]: input} : {};
 
 module.exports = objectify;
