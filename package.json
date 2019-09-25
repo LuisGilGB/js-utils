@@ -4,7 +4,8 @@
   "description": "A collection of native JavaScript utils such as functions and constants.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "hot-test": "nodemon --exec 'npm test'"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/LuisGilGB/js-utils#readme",
   "devDependencies": {
-    "mocha": "^6.2.0"
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.2"
   }
 }

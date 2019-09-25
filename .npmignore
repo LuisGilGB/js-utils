@@ -1,3 +1,6 @@
 #tests
 test
 tests
+
+#gitignore
+.gitignore
