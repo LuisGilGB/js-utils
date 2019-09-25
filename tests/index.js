@@ -4,8 +4,8 @@ const tests = [
     ...functionsTests
 ];
 
-const executeTest = () => {
+const runTest = () => {
     functionsTests.forEach(test => test());
 }
 
-executeTest();
+runTest();
