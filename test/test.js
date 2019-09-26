@@ -5,3 +5,4 @@ const testFunction = (name) => {
 }
 
 testFunction('defaultMapper');
+testFunction('exists');
