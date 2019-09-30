@@ -6,7 +6,8 @@
  * Example: objectify(3, 'number') returns the object { number: 3 }
  */
 const exists = require('./exists');
+const isObject = require('./isObject');
 
-const objectify = (input, valueKey = 'value') => exists(input) ? typeof input === 'object' ? input : {[valueKey]: input} : {};
+const objectify = (input, valueKey = 'value') => exists(input) ? isObject(input) ? input : {[valueKey]: input} : {};
 
 module.exports = objectify;
