@@ -17,6 +17,7 @@ const arrayNumbersExpects = false;
 const arrayStringsExpects = false;
 const arrayObjectsExpects = false;
 const objectExpects = true;
+const functionExpects = false;
 
 it(`Undefined returns ${undefinedExpects}`, () => {
     assert.equal(isObject(undefined), undefinedExpects);
@@ -65,4 +66,7 @@ it(`Array of objects returns ${arrayObjectsExpects}`, () => {
 });
 it(`Arbitrary object returns ${objectExpects}`, () => {
     assert.equal(isObject({a:1,b:2,c:3}), objectExpects);
+});
+it(`Arbitrary function returns ${functionExpects}`, () => {
+    assert.equal(isObject(() => 'I am a function'), functionExpects);
 });

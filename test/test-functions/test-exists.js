@@ -1,33 +1,72 @@
 const assert = require('assert');
 const {exists} = require('../../index');
 
-it('Undefined returns false', () => {
-    assert.equal(exists(undefined), false);
+const undefinedExpects = false;
+const nullExpects = true;
+const falseExpects = true;
+const trueExpects = true;
+const emptyStringExpects = true;
+const zeroExpects = true;
+const nanExpects = true;
+const infinityExpects = true;
+const emptyArrayExpects = true;
+const emptyObjectExpects = true;
+const stringExpects = true;
+const numberExpects = true;
+const arrayNumbersExpects = true;
+const arrayStringsExpects = true;
+const arrayObjectsExpects = true;
+const objectExpects = true;
+const functionExpects = true;
+
+it(`Undefined returns ${undefinedExpects}`, () => {
+    assert.equal(exists(undefined), undefinedExpects);
 });
-it('Null returns true', () => {
-    assert.equal(exists(null), true);
+it(`Null returns ${nullExpects}`, () => {
+    assert.equal(exists(null), nullExpects);
 });
-it('False returns true', () => {
-    assert.equal(exists(false), true);
+it(`False returns ${falseExpects}`, () => {
+    assert.equal(exists(false), falseExpects);
 });
-it('Empty string returns true', () => {
-    assert.equal(exists(''), true);
+it(`True returns ${trueExpects}`, () => {
+    assert.equal(exists(true), trueExpects);
 });
-it('0 returns true', () => {
-    assert.equal(exists(0), true);
+it(`Empty string returns ${emptyStringExpects}`, () => {
+    assert.equal(exists(''), emptyStringExpects);
 });
-it('NaN returns true', () => {
-    assert.equal(exists(NaN), true);
+it(`0 returns ${zeroExpects}`, () => {
+    assert.equal(exists(0), zeroExpects);
 });
-it('Infinity returns true', () => {
-    assert.equal(exists(Infinity), true);
+it(`NaN returns ${nanExpects}`, () => {
+    assert.equal(exists(NaN), nanExpects);
 });
-it('Empty array returns true', () => {
-    assert.equal(exists([]), true);
+it(`Infinity returns ${infinityExpects}`, () => {
+    assert.equal(exists(Infinity), infinityExpects);
 });
-it('Empty object returns true', () => {
-    assert.equal(exists({}), true);
+it(`Empty array returns ${emptyArrayExpects}`, () => {
+    assert.equal(exists([]), emptyArrayExpects);
 });
-it('Arbitrary string returns true', () => {
-    assert.equal(exists('Arbitrary'), true);
+it(`Empty object returns ${emptyObjectExpects}`, () => {
+    assert.equal(exists({}), emptyObjectExpects);
+});
+it(`Arbitrary string returns ${stringExpects}`, () => {
+    assert.equal(exists('Arbitrary'), stringExpects);
+});
+it(`Arbitrary number returns ${numberExpects}`, () => {
+    assert.equal(exists(1234), numberExpects);
+});
+it(`Array of numbers returns ${arrayNumbersExpects}`, () => {
+    assert.equal(exists([1,2,3]), arrayNumbersExpects);
+});
+it(`Array of strings returns ${arrayStringsExpects}`, () => {
+    assert.equal(exists(['a','b','c']), arrayStringsExpects);
+});
+it(`Array of objects returns ${arrayObjectsExpects}`, () => {
+    assert.equal(exists([{v:1},{v:2},{v:3}]), arrayObjectsExpects);
+});
+it(`Arbitrary object returns ${objectExpects}`, () => {
+    assert.equal(exists({a:1,b:2,c:3}), objectExpects);
+});
+it(`Arbitrary function returns ${functionExpects}`, () => {
+    assert.equal(exists(() => 'I am a function'), functionExpects);
 });
