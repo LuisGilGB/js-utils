@@ -3,6 +3,6 @@
  */
 const isArray = require('./isArray');
 
-const isObject = input => input && typeof input === 'object' && !isArray(input);
+const isObject = input => !!(input && typeof input === 'object' && !isArray(input));
 
 module.exports = isObject;
