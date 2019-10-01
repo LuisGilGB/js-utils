@@ -1,3 +1,4 @@
+const convertArrayToObjectFromKey = require('./convertArrayToObjectFromKey');
 const identityFunction = require('./identityFunction');
 const defaultMapper = require('./defaultMapper');
 const exists = require('./exists');
@@ -15,6 +16,7 @@ const isEmptyObject = require('./isEmptyObject');
 const isEmpty = require('./isEmpty');
 
 module.exports = {
+    convertArrayToObjectFromKey,
 	identityFunction,
     defaultMapper,
     exists,
