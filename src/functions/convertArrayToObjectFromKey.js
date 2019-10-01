@@ -34,3 +34,8 @@
  *         }
  *     }
  */
+const converterStep = (key = 'id') => (tempAns = {}, item = {}) => ({...tempAns, [item[key]]: item});
+
+const convertArrayToObjectFromKey = (input = [], key = 'id') => input.reduce(converterStep(key), {});
+
+module.exports = convertArrayToObjectFromKey;
