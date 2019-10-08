@@ -14,6 +14,7 @@ const isEmptyString = require('./isEmptyString');
 const isEmptyArray = require('./isEmptyArray');
 const isEmptyObject = require('./isEmptyObject');
 const isEmpty = require('./isEmpty');
+const addToObjectIf = require('./addToObjectIf');
 
 module.exports = {
     convertArrayToObjectFromKey,
@@ -31,5 +32,6 @@ module.exports = {
     isEmptyString,
     isEmptyArray,
     isEmptyObject,
-    isEmpty
+    isEmpty,
+    addToObjectIf
 }
