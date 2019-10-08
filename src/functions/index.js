@@ -11,6 +11,7 @@ const isObject = require('./isObject');
 const isFunction = require('./isFunction');
 const isNullOrUndefined = require('./isNullOrUndefined');
 const isEmptyString = require('./isEmptyString');
+const isNonEmptyString = require('./isNonEmptyString');
 const isEmptyArray = require('./isEmptyArray');
 const isEmptyObject = require('./isEmptyObject');
 const isEmpty = require('./isEmpty');
@@ -30,6 +31,7 @@ module.exports = {
     isFunction,
     isNullOrUndefined,
     isEmptyString,
+    isNonEmptyString,
     isEmptyArray,
     isEmptyObject,
     isEmpty,
