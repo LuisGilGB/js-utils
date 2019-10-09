@@ -72,3 +72,15 @@ describe('Non valid keys tests', () => {
         expect(addToObjectIf(alwaysTrue, inputObject, shortInput)).to.eql(inputObject);
     });
 });
+
+describe('When an object is not provided, the output remains the same', () => {
+    it('Object input is a number', () => {
+        expect(addToObjectIf(alwaysTrue, numKey, shortInput, key)).to.eql(numKey);
+    });
+    it('Object input is a string', () => {
+        expect(addToObjectIf(alwaysTrue, key, shortInput, key)).to.eql(key);
+    });
+    it('Object input is an array', () => {
+        expect(addToObjectIf(alwaysTrue, arrayKey, shortInput, key)).to.eql(arrayKey);
+    });
+})
