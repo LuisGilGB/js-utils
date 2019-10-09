@@ -13,11 +13,9 @@ const outputObject = {
     [key]: definedInput
 }
 
-describe('Non valid keys tests', () => {
-    it('Output object remains the same than input object if input value is undefined', () => {
-        expect(addToObjectIfExists(inputObject, undefined, key)).to.eql(inputObject);
-    });
-    it('Adds the new value to the input object in the field of the given key', () => {
-        expect(addToObjectIfExists(inputObject, definedInput, key)).to.eql(outputObject);
-    });
+it('Output object remains the same than input object if input value is undefined', () => {
+    expect(addToObjectIfExists(inputObject, undefined, key)).to.eql(inputObject);
+});
+it('Adds the new value to the input object in the field of the given key', () => {
+    expect(addToObjectIfExists(inputObject, definedInput, key)).to.eql(outputObject);
 });

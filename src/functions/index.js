@@ -17,6 +17,7 @@ const isEmpty = require('./isEmpty');
 const isNonEmptyString = require('./isNonEmptyString');
 const addToObjectIf = require('./addToObjectIf');
 const addToObjectIfExists = require('./addToObjectIfExists');
+const mapExistingToObject = require('./mapExistingToObject');
 
 module.exports = {
     convertArrayToObjectFromKey,
@@ -37,5 +38,6 @@ module.exports = {
     isEmpty,
     isNonEmptyString,
     addToObjectIf,
-    addToObjectIfExists
+    addToObjectIfExists,
+    mapExistingToObject
 }
