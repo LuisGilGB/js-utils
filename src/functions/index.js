@@ -18,6 +18,13 @@ const isNonEmptyString = require('./isNonEmptyString');
 const addToObjectIf = require('./addToObjectIf');
 const addToObjectIfExists = require('./addToObjectIfExists');
 const mapExistingToObject = require('./mapExistingToObject');
+const pushToArrayIf = require('./pushToArrayIf');
+const pushToArrayIfExists = require('./pushToArrayIfExists');
+const concatArrays = require('./concatArrays');
+const combineArrays = require('./combineArrays');
+const filterRepeatedItemsInArray = require('./filterRepeatedItemsInArray');
+const sortArray = require('./sortArray');
+const combineAndSortArrays = require('./combineAndSortArrays');
 
 module.exports = {
     convertArrayToObjectFromKey,
@@ -39,5 +46,12 @@ module.exports = {
     isNonEmptyString,
     addToObjectIf,
     addToObjectIfExists,
-    mapExistingToObject
+    mapExistingToObject,
+    pushToArrayIf,
+    pushToArrayIfExists,
+    concatArrays,
+    combineArrays,
+    filterRepeatedItemsInArray,
+    sortArray,
+    combineAndSortArrays
 }
