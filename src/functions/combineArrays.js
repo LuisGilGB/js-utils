@@ -3,9 +3,8 @@
  * No deep equality filter supported yet.
  */
 const concatArrays = require('./concatArrays');
+const filterRepeatedItemsInArray = require('./filterRepeatedItemsInArray');
 
-const filterRepeatedItems = (item, index, array) => array.indexOf(item) === index;
-
-const combineArrays = (...inputs) => concatArrays(...inputs).filter(filterRepeatedItems);
+const combineArrays = (...inputs) => filterRepeatedItemsInArray(concatArrays(...inputs));
 
 module.exports = combineArrays;
