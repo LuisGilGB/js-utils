@@ -5,6 +5,9 @@ describe("Single input tests", () => {
     it("Returns the only input when it is an array", () => {
         expect(combineArrays([1,2])).to.eql([1,2]);
     });
+    it("Returns the only input but combined", () => {
+        expect(combineArrays([1,2,2,1])).to.eql([1,2]);
+    });
     it("Returns the only input as a single item array with the input as its only item when it's not an array", () => {
         expect(combineArrays(12)).to.eql([12]);
     });
