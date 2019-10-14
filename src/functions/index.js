@@ -19,6 +19,7 @@ const addToObjectIf = require('./addToObjectIf');
 const addToObjectIfExists = require('./addToObjectIfExists');
 const mapExistingToObject = require('./mapExistingToObject');
 const pushToArrayIf = require('./pushToArrayIf');
+const pushToArrayIfExists = require('./pushToArrayIfExists');
 
 module.exports = {
     convertArrayToObjectFromKey,
@@ -41,5 +42,6 @@ module.exports = {
     addToObjectIf,
     addToObjectIfExists,
     mapExistingToObject,
-    pushToArrayIf
+    pushToArrayIf,
+    pushToArrayIfExists
 }
