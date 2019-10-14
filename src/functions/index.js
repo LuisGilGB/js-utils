@@ -22,6 +22,7 @@ const pushToArrayIf = require('./pushToArrayIf');
 const pushToArrayIfExists = require('./pushToArrayIfExists');
 const concatArrays = require('./concatArrays');
 const combineArrays = require('./combineArrays');
+const filterRepeatedItemsInArray = require('./filterRepeatedItemsInArray');
 
 module.exports = {
     convertArrayToObjectFromKey,
@@ -47,5 +48,6 @@ module.exports = {
     pushToArrayIf,
     pushToArrayIfExists,
     concatArrays,
-    combineArrays
+    combineArrays,
+    filterRepeatedItemsInArray
 }
