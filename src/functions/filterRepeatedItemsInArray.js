@@ -4,7 +4,7 @@
  *
  * If the input is not an array, the output is the input itself.
  */
-const isArray = require('./filterRepeatedItemsInArray');
+const isArray = require('./isArray');
 
 const stepFn = (item, index, array) => array.indexOf(item) === index;
 const filterRepeatedItemsInArray = (input) => isArray(input) ? input.filter(stepFn) : input;
