@@ -15,6 +15,7 @@ const isEmptyArray = require('./isEmptyArray');
 const isEmptyObject = require('./isEmptyObject');
 const isEmpty = require('./isEmpty');
 const isNonEmptyString = require('./isNonEmptyString');
+const isNonEmptyArray = require('./isNonEmptyArray');
 const addToObjectIf = require('./addToObjectIf');
 const addToObjectIfExists = require('./addToObjectIfExists');
 const mapExistingToObject = require('./mapExistingToObject');
@@ -44,6 +45,7 @@ module.exports = {
     isEmptyObject,
     isEmpty,
     isNonEmptyString,
+    isNonEmptyArray,
     addToObjectIf,
     addToObjectIfExists,
     mapExistingToObject,
