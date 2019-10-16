@@ -26,6 +26,7 @@ const combineArrays = require('./combineArrays');
 const filterRepeatedItemsInArray = require('./filterRepeatedItemsInArray');
 const sortArray = require('./sortArray');
 const combineAndSortArrays = require('./combineAndSortArrays');
+const getLast = require('./getLast');
 
 module.exports = {
     convertArrayToObjectFromKey,
@@ -55,5 +56,6 @@ module.exports = {
     combineArrays,
     filterRepeatedItemsInArray,
     sortArray,
-    combineAndSortArrays
+    combineAndSortArrays,
+    getLast
 }
