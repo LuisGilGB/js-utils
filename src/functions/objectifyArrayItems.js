@@ -5,6 +5,6 @@
 const isArray = require('./isArray');
 const objectify = require('./objectify');
 
-const objectifyArrayItems = (input, key = 'value') => isArray(input) ? input.map(item => objectify(item, key)) : objectify(item, key);
+const objectifyArrayItems = (input, key = 'value') => isArray(input) ? input.map(item => objectify(item, key)) : objectify(input, key);
 
 module.exports = objectifyArrayItems;
