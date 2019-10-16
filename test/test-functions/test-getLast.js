@@ -1,6 +1,18 @@
 const {expect} = require('chai');
 const {getLast} = require('../../index');
 
+describe("Get the last element of a string", () => {
+    it("Many chars string", () => {
+        expect(getLast('qwerty')).to.eql('y');
+    });
+    it("One char array", () => {
+        expect(getLast('x')).to.eql('x');
+    });
+    it("Last char is a space", () => {
+        expect(getLast('asdf ')).to.eql(' ');
+    });
+});
+
 describe("Get the last element of an array", () => {
     it("Numbers array", () => {
         expect(getLast([1,2,3])).to.eql(3);
@@ -31,6 +43,12 @@ describe("Returns undefined when it must", () => {
     });
     it("Undefined input", () => {
         expect(getLast(undefined)).to.eql(undefined);
+    });
+    it("Empty string input", () => {
+        expect(getLast('')).to.eql(undefined);
+    });
+    it("Only char is a space", () => {
+        expect(getLast(' ')).to.eql(undefined);
     });
     it("Empty array input", () => {
         expect(getLast([])).to.eql(undefined);
