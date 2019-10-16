@@ -30,57 +30,57 @@ const outputForLong = {
 
 describe('Always true condition input-output tests', () => {
     it('Short input test (new key - value must be added)', () => {
-        expect(addToObjectIf(alwaysTrue, inputObject, shortInput, key)).to.eql(outputForShort);
+        expect(addToObjectIf(inputObject, shortInput, key, alwaysTrue)).to.eql(outputForShort);
     });
     it('Long input test (new key - value must be added)', () => {
-        expect(addToObjectIf(alwaysTrue, inputObject, longInput, key)).to.eql(outputForLong);
+        expect(addToObjectIf(inputObject, longInput, key, alwaysTrue)).to.eql(outputForLong);
     });
 });
 
 describe('Shorter than true condition input-output tests', () => {
     it('Short input test (new key - value must be added)', () => {
-        expect(addToObjectIf(shorterThan3Condition, inputObject, shortInput, key)).to.eql(outputForShort);
+        expect(addToObjectIf(inputObject, shortInput, key, shorterThan3Condition)).to.eql(outputForShort);
     });
     it('Long input test (the output remains the same than the input)', () => {
-        expect(addToObjectIf(shorterThan3Condition, inputObject, longInput, key)).to.eql(inputObject);
+        expect(addToObjectIf(inputObject, longInput, key, shorterThan3Condition)).to.eql(inputObject);
     });
 });
 
 describe('Non valid keys tests', () => {
     it('Empty string key test (the output remains the same than the input)', () => {
-        expect(addToObjectIf(alwaysTrue, inputObject, shortInput, emptyStringKey)).to.eql(inputObject);
+        expect(addToObjectIf(inputObject, shortInput, emptyStringKey, alwaysTrue)).to.eql(inputObject);
     });
     it('Space string key test (the output remains the same than the input)', () => {
-        expect(addToObjectIf(alwaysTrue, inputObject, shortInput, spaceKey)).to.eql(inputObject);
+        expect(addToObjectIf(inputObject, shortInput, spaceKey, alwaysTrue)).to.eql(inputObject);
     });
     it('Boolean key test (the output remains the same than the input)', () => {
-        expect(addToObjectIf(alwaysTrue, inputObject, shortInput, boolKey)).to.eql(inputObject);
+        expect(addToObjectIf(inputObject, shortInput, boolKey, alwaysTrue)).to.eql(inputObject);
     });
     it('Number key test (the output remains the same than the input)', () => {
-        expect(addToObjectIf(alwaysTrue, inputObject, shortInput, numKey)).to.eql(inputObject);
+        expect(addToObjectIf(inputObject, shortInput, numKey, alwaysTrue)).to.eql(inputObject);
     });
     it('Array key test (the output remains the same than the input)', () => {
-        expect(addToObjectIf(alwaysTrue, inputObject, shortInput, arrayKey)).to.eql(inputObject);
+        expect(addToObjectIf(inputObject, shortInput, arrayKey, alwaysTrue)).to.eql(inputObject);
     });
     it('Object key test (the output remains the same than the input)', () => {
-        expect(addToObjectIf(alwaysTrue, inputObject, shortInput, objectKey)).to.eql(inputObject);
+        expect(addToObjectIf(inputObject, shortInput, objectKey, alwaysTrue)).to.eql(inputObject);
     });
     it('Null key test (the output remains the same than the input)', () => {
-        expect(addToObjectIf(alwaysTrue, inputObject, shortInput, null)).to.eql(inputObject);
+        expect(addToObjectIf(inputObject, shortInput, null, alwaysTrue)).to.eql(inputObject);
     });
     it('Undefined key test (the output remains the same than the input)', () => {
-        expect(addToObjectIf(alwaysTrue, inputObject, shortInput)).to.eql(inputObject);
+        expect(addToObjectIf(inputObject, shortInput, undefined, alwaysTrue)).to.eql(inputObject);
     });
 });
 
 describe('When an object is not provided, the output remains the same', () => {
     it('Object input is a number', () => {
-        expect(addToObjectIf(alwaysTrue, numKey, shortInput, key)).to.eql(numKey);
+        expect(addToObjectIf(numKey, shortInput, key, alwaysTrue)).to.eql(numKey);
     });
     it('Object input is a string', () => {
-        expect(addToObjectIf(alwaysTrue, key, shortInput, key)).to.eql(key);
+        expect(addToObjectIf(key, shortInput, key, alwaysTrue)).to.eql(key);
     });
     it('Object input is an array', () => {
-        expect(addToObjectIf(alwaysTrue, arrayKey, shortInput, key)).to.eql(arrayKey);
+        expect(addToObjectIf(arrayKey, shortInput, key, alwaysTrue)).to.eql(arrayKey);
     });
 })
