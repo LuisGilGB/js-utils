@@ -8,6 +8,6 @@
 const exists = require('./exists');
 const isObject = require('./isObject');
 
-const objectify = (input, valueKey = 'value') => exists(input) ? isObject(input) ? input : {[valueKey]: input} : {};
+const objectify = (input, key = 'value') => exists(input) ? isObject(input) ? input : {[key]: input} : {};
 
 module.exports = objectify;
