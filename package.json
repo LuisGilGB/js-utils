@@ -7,7 +7,9 @@
     "test": "mocha",
     "hot-test": "nodemon --exec 'npm test'",
     "build-dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build-dev-watch": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "publish-pro": "npm run build && npm publish --access public"
   },
   "repository": {
     "type": "git",
