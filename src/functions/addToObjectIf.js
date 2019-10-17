@@ -6,6 +6,6 @@
 const isObject = require('./isObject');
 const isNonEmptyString = require('./isNonEmptyString');
 
-const addToObjectIf = (condFn, obj = {}, value, key) => isObject(obj) && isNonEmptyString(key) && condFn(value) ? {...obj, [key]: value} : obj;
+const addToObjectIf = (obj = {}, value, key, condFn) => isObject(obj) && isNonEmptyString(key) && condFn(value) ? {...obj, [key]: value} : obj;
 
 module.exports = addToObjectIf;

@@ -4,6 +4,6 @@
 const addToObjectIf = require('./addToObjectIf');
 const exists = require('./exists');
 
-const addToObjectIfExists = (obj = {}, value, key) => addToObjectIf(exists, obj, value, key);
+const addToObjectIfExists = (obj = {}, value, key) => addToObjectIf(obj, value, key, exists);
 
 module.exports = addToObjectIfExists;

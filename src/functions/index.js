@@ -15,6 +15,7 @@ const isEmptyArray = require('./isEmptyArray');
 const isEmptyObject = require('./isEmptyObject');
 const isEmpty = require('./isEmpty');
 const isNonEmptyString = require('./isNonEmptyString');
+const isNonEmptyArray = require('./isNonEmptyArray');
 const addToObjectIf = require('./addToObjectIf');
 const addToObjectIfExists = require('./addToObjectIfExists');
 const mapExistingToObject = require('./mapExistingToObject');
@@ -25,6 +26,9 @@ const combineArrays = require('./combineArrays');
 const filterRepeatedItemsInArray = require('./filterRepeatedItemsInArray');
 const sortArray = require('./sortArray');
 const combineAndSortArrays = require('./combineAndSortArrays');
+const getLast = require('./getLast');
+const objectifyArrayItems = require('./objectifyArrayItems');
+const pushToArrayAtKey = require('./pushToArrayAtKey');
 
 module.exports = {
     convertArrayToObjectFromKey,
@@ -44,6 +48,7 @@ module.exports = {
     isEmptyObject,
     isEmpty,
     isNonEmptyString,
+    isNonEmptyArray,
     addToObjectIf,
     addToObjectIfExists,
     mapExistingToObject,
@@ -53,5 +58,8 @@ module.exports = {
     combineArrays,
     filterRepeatedItemsInArray,
     sortArray,
-    combineAndSortArrays
+    combineAndSortArrays,
+    getLast,
+    objectifyArrayItems,
+    pushToArrayAtKey
 }
