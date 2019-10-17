@@ -2,10 +2,12 @@
   "name": "@luisgilgb/js-utils",
   "version": "0.3.0",
   "description": "A collection of native JavaScript utils such as functions and constants.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha",
-    "hot-test": "nodemon --exec 'npm test'"
+    "hot-test": "nodemon --exec 'npm test'",
+    "build-dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
