@@ -28,6 +28,7 @@ const sortArray = require('./sortArray');
 const combineAndSortArrays = require('./combineAndSortArrays');
 const getLast = require('./getLast');
 const objectifyArrayItems = require('./objectifyArrayItems');
+const pushToArrayAtKey = require('./pushToArrayAtKey');
 
 module.exports = {
     convertArrayToObjectFromKey,
@@ -59,5 +60,6 @@ module.exports = {
     sortArray,
     combineAndSortArrays,
     getLast,
-    objectifyArrayItems
+    objectifyArrayItems,
+    pushToArrayAtKey
 }
