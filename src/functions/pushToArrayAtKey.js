@@ -19,7 +19,7 @@ const pushToArrayAtKey = (inputObject, value, key) => {
             }
         } else if (!exists(targetField)) {
             return {
-                ...input,
+                ...inputObject,
                 [key]: [value]
             }
         }
