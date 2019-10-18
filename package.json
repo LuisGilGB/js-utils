@@ -26,6 +26,9 @@
   },
   "homepage": "https://github.com/LuisGilGB/js-utils#readme",
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
     "chai": "^4.2.0",
     "mocha": "^6.2.0",
     "nodemon": "^1.19.2",
