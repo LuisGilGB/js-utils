@@ -1,12 +1,19 @@
 {
   "name": "@luisgilgb/js-utils",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "A collection of native JavaScript utils such as functions and constants.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha",
-    "hot-test": "nodemon --exec 'npm test'"
+    "hot-test": "nodemon --exec 'npm test'",
+    "build-dev": "webpack --mode development",
+    "build-dev-watch": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "publish-pro": "npm run build && npm publish --access public"
   },
+  "files": [
+    "/dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LuisGilGB/js-utils.git"
@@ -22,8 +29,13 @@
   },
   "homepage": "https://github.com/LuisGilGB/js-utils#readme",
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
     "chai": "^4.2.0",
     "mocha": "^6.2.0",
-    "nodemon": "^1.19.2"
+    "nodemon": "^1.19.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
   }
 }
