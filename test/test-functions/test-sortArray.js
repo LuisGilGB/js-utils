@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {sortArray} = require('../../index');
+const {sortArray} = require('../../dist/index');
 
 it("Returns the same array given in the input when it is already ordered", () => {
     expect(sortArray([1,2,3])).to.eql([1,2,3]);

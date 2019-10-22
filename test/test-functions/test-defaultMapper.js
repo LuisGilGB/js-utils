@@ -1,5 +1,5 @@
 const assert = require('assert');
-const utils = require('../../index');
+const utils = require('../../dist/index');
 const {defaultMapper} = utils;
 
 const input1 = [1,2,3];

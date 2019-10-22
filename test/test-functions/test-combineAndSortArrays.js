@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {combineAndSortArrays} = require('../../index');
+const {combineAndSortArrays} = require('../../dist/index');
 
 describe("Single input tests", () => {
     it("Returns the only input when it is an ordered array", () => {

@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {getLast} = require('../../index');
+const {getLast} = require('../../dist/index');
 
 describe("Get the last element of a string", () => {
     it("Many chars string", () => {

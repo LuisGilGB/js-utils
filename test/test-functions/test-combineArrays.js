@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {combineArrays} = require('../../index');
+const {combineArrays} = require('../../dist/index');
 
 describe("Single input tests", () => {
     it("Returns the only input when it is an array", () => {

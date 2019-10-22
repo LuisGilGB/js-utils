@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {pushToArrayAtKey} = require('../../index');
+const {pushToArrayAtKey} = require('../../dist/index');
 
 it("Default use case", () => {
     expect(pushToArrayAtKey({a:'a',b:[1,3]}, 5, 'b')).to.eql({a:'a',b:[1,3,5]});

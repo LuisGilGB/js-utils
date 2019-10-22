@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {pushToArrayIf} = require('../../index');
+const {pushToArrayIf} = require('../../dist/index');
 
 const alwaysTrue = () => true;
 

@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {convertArrayToObjectFromKey} = require('../../index');
+const {convertArrayToObjectFromKey} = require('../../dist/index');
 
 const inputDefKey = [
     {

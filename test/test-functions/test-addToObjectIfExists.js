@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {addToObjectIfExists} = require('../../index');
+const {addToObjectIfExists} = require('../../dist/index');
 
 const inputObject = {
     prevValue: 123
