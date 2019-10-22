@@ -1,6 +1,6 @@
 {
   "name": "@luisgilgb/js-utils",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A collection of native JavaScript utils such as functions and constants.",
   "main": "dist/index.js",
   "scripts": {
