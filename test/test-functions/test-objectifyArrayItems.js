@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {objectifyArrayItems} = require('../../index');
+const {objectifyArrayItems} = require('../../dist/index');
 
 it("Objectify with default key", () => {
     expect(objectifyArrayItems(['a','s','d','f'])).to.eql([{value:'a'},{value:'s'},{value:'d'},{value:'f'}]);

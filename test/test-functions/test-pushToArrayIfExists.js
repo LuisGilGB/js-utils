@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {pushToArrayIfExists} = require('../../index');
+const {pushToArrayIfExists} = require('../../dist/index');
 
 it("Truthy input is pushed", () => {
     expect(pushToArrayIfExists([1,2,3], 4)).to.eql([1,2,3,4]);

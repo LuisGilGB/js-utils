@@ -1,5 +1,5 @@
 const {assert, expect} = require('chai');
-const {objectify, isObject} = require('../../index');
+const {objectify, isObject} = require('../../dist/index');
 
 const altKey = 'alt'
 

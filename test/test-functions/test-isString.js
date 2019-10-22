@@ -1,5 +1,5 @@
 const assert = require('assert');
-const {isString} = require('../../index');
+const {isString} = require('../../dist/index');
 
 const undefinedExpects = false;
 const nullExpects = false;

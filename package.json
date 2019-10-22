@@ -4,8 +4,8 @@
   "description": "A collection of native JavaScript utils such as functions and constants.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha",
-    "hot-test": "nodemon --exec 'npm test'",
+    "test": "npm run build && mocha",
+    "hot-test": "nodemon --exec 'mocha'",
     "build-dev": "webpack --mode development",
     "build-dev-watch": "webpack --mode development --watch",
     "build": "webpack --mode production",

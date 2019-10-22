@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {mapExistingToObject} = require('../../index');
+const {mapExistingToObject} = require('../../dist/index');
 
 const destinationObject = {
     id: 'input0',

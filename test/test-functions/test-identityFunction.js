@@ -1,5 +1,5 @@
 const assert = require('assert');
-const {identityFunction} = require('../../index');
+const {identityFunction} = require('../../dist/index');
 
 const input1 = 7865324;
 const input2 = 'just a string';

@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {filterRepeatedItemsInArray} = require('../../index');
+const {filterRepeatedItemsInArray} = require('../../dist/index');
 
 it("Returns the same array given in the input when no repeated items are found", () => {
     expect(filterRepeatedItemsInArray([1,2,3])).to.eql([1,2,3]);
